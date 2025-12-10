@@ -44,8 +44,12 @@
                 </tr>
             @endforeach
             <tr>
-                <td colspan="3" class="border px-4 py-2 text-right font-bold">Total:</td>
-                <td class="border px-4 py-2 text-center font-bold">{{ number_format($sum, 2) }}</td>
+                <td colspan="3" class="border px-4 py-2 text-right font-bold">
+                    Total:
+                </td>
+                <td class="border px-4 py-2 text-center font-bold">
+                    {{ number_format($cart->total_price, 2) }}
+                </td>
                 <td class="border px-4 py-2"></td>
             </tr>
             </tbody>
